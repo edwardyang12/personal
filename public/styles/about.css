@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'roboto';
+    src: url("roboto.woff") format("woff"),
+          url("roboto.woff2") format("woff2"),
+          url("roboto.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+* {
+  font-family: Helvetica;
+}
+
+#main {
+  display: grid;
+  grid-area: m;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-areas:
+  ". p p p p p p p p p p p p ."
+  ". d d d d d d d d d d d d ."
+  ". h h h h h h h h h h h h ."
+  ". t t t t t t t t t t t t .";
+}
+
+h2{
+  font-family: roboto, Helvetica;
+  font-size: 4.5vw;
+}
+
+#education {
+  grid-area: p;
+}
+
+#skills{
+  grid-area: d;
+}
+
+#extra{
+  grid-area: h;
+}
+
+#timeline {
+  border-style: double;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: t;
+}
+
+.topnav{
+  grid-area: h;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.topnav a{
+  float: right;
+  color: #557a95;
+  text-align: center;
+  padding: 1vw 1vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.topnav a.hoverable:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #7395ae;
+  color: white;
+}

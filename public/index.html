@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta Cache-Control: max-age=180 />
+	<meta x-content-type-options: nosniff />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Edward Yang's Website</title>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body id="page">
+	<header>
+		<nav class="topnav">
+			<a href="index.html" style="float:left; font-size: 3vw">Edward Yang</a>
+			<a class ="hoverable" href="index.html">Experimental</a>
+			<a class ="hoverable" href="about.html">About</a>
+			<a class ="hoverable" href="index.html">Projects</a>
+			<a class="active " href="index.html">Home</a>
+		</nav>
+	</header>
+	<main id="main">
+		<section id="intro">
+			<picture id="face">
+			  <source media="(min-width:1001px)" srcset="Computer/face.jpg">
+					<source media="(max-width:1000px)" srcset="Mobile/face.jpg">
+				<img src="Computer/face.jpg" alt="Picture of me" style="border-radius: 50%; width: 85%; height:75%">
+			</picture>
+			<h2 id="hello">Hi! <br> Nice to meet you!</h2>
+			<p id ="begin" style="font-size: 2vw"> My name is Edward and I'm a third year Computer Science major with a minor in Business studying at UC San Diego and graduating in 2022. <br/>
+				I'm also an ML researcher who's worked in multiple research labs since high school. I'm currently doing research in the SU Lab at UCSD, a lab that focuses mainly on 3D computer vision and reinforcement learning. <br/>
+			</p>
+			<p id="continue" style="font-size: 2vw">
+				I enjoy working on web and mobile development for AI/ML applications to utilize cutting edge technology to solve real world problems. <br/>
+				I'm also interested in the business side of things, working towards the day when I create a product that will be a household name. <br/>
+				Check out some of my cool projects in the projects page!
+			</p>
+			<a id = "resume" href="Resume.pdf" >
+				<img sizes="(min-width:1001px) 10vw, (max-width:1000px) 10vw" srcset="Computer/circle.png 502w, Mobile/circle.png 251w"
+				src ="Computer/circle.png" alt="Resume" style="width: 80%"/>
+			</a>
+			<section id="quote" style="font-size: 2vw;">
+				<h2 style="visibility:hidden;">Quote</h2>
+				<q>Believe you can and you're halfway there</q>
+				<cite> Theodore Roosevelt</cite>
+			</section>
+			<section id="work">
+				<h2>Experiences</h2>
+				<h3>Su Lab - Research Intern</h3>
+				<hr>
+				<p> Collaborated with Alibaba engineers on the task of active light sim to real using stereo images to estimate the depth of real scenes while only training on simulated scenes through Generative Adversarial Networks <br>
+					Implemented and evaluated AAnet and Cascade-Stereo stereovision model performance on custom dataset <br>
+					Improved performance of existing stereo models on dataset by 93% using novel network architecture
+				</p>
+				<h3>Statistical Visual Computing Laboratory - Undergraduate Researcher</h3>
+				<hr>
+				<p> Worked with Professor Nuno Vasconcelos using unsupervised domain adaptation and meta learning for real- world single view 3D reconstruction <br>
+					Implemented Occupancy Networks from scratch and evaluated performance on custom dataset <br>
+					Built dataset of household 3D objects in multiple domains (CAD, rendered scan, real world depth) to be used as a baseline for real world domain adaptation tasks
+				</p>
+
+			</section>
+			<div id="contact">
+				<picture id="pic">
+					<!-- https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/1200px-Google_Contacts_icon.svg.png -->
+				  <source media="(min-width:1001px)" srcset="Computer/contact.png">
+						<source media="(max-width:1000px)" srcset="Mobile/contact.png">
+					<img src="Computer/contact.png" alt="Contact" style="border-radius: 50%; width:80%" >
+				</picture>
+				<p id="link" style="font-size: 1.7vw">
+					Github: <a href="https://github.com/edwardyang12" style="text-decoration: none;">edwardyang12</a>
+					Email: <a href="edwardyang016@gmail.com" style="text-decoration: none;">edwardyang016@gmail.com</a>
+					Linkedin: <a href="https://www.linkedin.com/in/edward-yang-07101a189/" style="text-decoration: none;">edward-yang-07101a189</a>
+				</p>
+			</div>
+
+			<section id="Information" style="font-size: 1.4vw">
+
+				<h3> UC San Diego CSE Tutor</h3>
+				<hr>
+				<p> Responsible for hosting office hours and individual/ group tutoring for 30 + students to discuss class topics in more depth <br>
+					Organized grading distribution for assignments among tutors and made mid/ final grade reports for students <br>
+					Worked as point of contact between students with questions or concerns about assignments or grades and the professors
+				</p>
+				<h3>Gao Lab - Undergraduate Researcher</h3>
+				<hr>
+				<p> Implemented barrier functions w/ common RL algorithms for improved accuracy on classical robotics problems such as pendulum. <br>
+					Built an OpenAI gym quadrotor environment for the tasks of drone trajectory following and hovering; tested on implementations of PPO, TRPO, and DDPG algorithms
+				</p>
+			</section>
+
+		</section>
+		<section id="projects">
+			<h2>Select Projects</h2>
+			<section id="proj1">
+				<picture >
+				  <source srcset="Computer/arm.gif">
+					<img src="Computer/arm.gif" alt="Arm" style="width: 100%">
+				</picture>
+				<h2 style="font-size: 2.5vw">Autonomous C-Bot @ UCI Hacks</h2>
+
+				<p style="font-size: 1.8vw"> Designed a depth perception and object detection algorithm to identify and calculate the distance between C- Bot and the target car <br>
+					 Built neural network controller to calculate optimal path for bot in a parking lot to reduce overall traffic while still maintaining safety in a multi agent system
+					 <br>
+					 Implemented bot in ROS Gazebo with robot arms and 4 wheel drive and trained using reinforcement learning algorithms<br>
+					 <b>Technologies: Pytorch, ROS</b>
+				 </p>
+				</section>
+				<section id="proj2">
+					<picture >
+					  <source srcset="Computer/ASL.jpg">
+						<img src="Computer/ASL.jpg" alt="Arm" style="width: 100%">
+					</picture>
+					<h2 style="font-size: 2.5vw">Sign Language Detector </h2>
+					<p style="font-size: 1.8vw"> Built an interpreter that utilizes state of the art Faster R-CNN to analyze webcam video streams for sign language signs using image segmentation and classification. <br>
+						Outputs the corresponding letter/word in real time to the user on the receiving end of the video call.
+						<br><b>Technologies: Tensorflow, JS, HTML & CSS</b>
+					 </p>
+				</section>
+			<section id="proj3">
+				<picture >
+				  <source media="(min-width:1001px)" srcset="Computer/homepage.png">
+						<source media="(max-width:1000px)" srcset="Mobile/homepage.png">
+					<img src="Computer/homepage.png" alt="BuJo Studio" style="width: 100%">
+				</picture>
+				<h2 style="font-size: 2.5vw">BuJo Studio</h2>
+				<p style="font-size: 1.8vw"> Project Lead for team of 7 in building CRUD application following Agile guidelines <br>
+					Created CI/ CD pipeline and feature branch workflow for group repository and unit tested code using Jest
+					<br>
+					Created scrollable and selectable monthly view features that can filter by bullet type and date range
+					<br> Implemented import/ export feature that works with local storage and MongoDB backends
+					<br>
+					<b>Technologies: HTML & CSS, Javascript, Jest, Git</b>
+				 </p>
+			</section>
+		</section>
+	</main>
+
+	<footer id="footer">
+		<p style="font-size: 1.8vw">💯This page was made with &hearts; by Edward 💯</p>
+		<a style="font-size: 1.8vw" href="https://www.linkedin.com/in/edward-yang-07101a189/">Linkedin</a> |
+		<a style="font-size: 1.8vw" href="https://github.com/edwardyang12">Github</a> |
+		<a style="font-size: 1.8vw" href="index.html">Recursive</a>
+	</footer>
+
+</body>
+</html>
